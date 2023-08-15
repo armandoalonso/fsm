@@ -73,7 +73,7 @@ readme.push(
   `The main files you may want to look at would be instance.js and scriptInterface.js`
 );
 
-readme.push(`---`);
+readme.push(``);
 readme.push(`## Examples Files`);
 const exampleFolderPath = path.join(__dirname, "examples");
 if(fs.existsSync(exampleFolderPath)) {
@@ -112,11 +112,10 @@ config.properties.forEach((property) => {
   ); 
 });
 readme.push(`---`);
-
 config.properties.forEach((property) => {
   readme.push(`### ${property.name}`);
-  readme.push(`**Description:** ${property.desc} </br>`);
-  readme.push(`**Type:** ${property.type}`);
+  readme.push(`**Description:** <br> ${property.desc} </br>`);
+  readme.push(`**Type:** <br> ${property.type}`);
   if (property.type === "combo") {
     readme.push(`**Options:**`);
     property.options.items.forEach((item) => {
@@ -145,10 +144,10 @@ readme.push(`---`);
 Object.keys(config.Acts).forEach((key) => {
   const action = config.Acts[key];
   readme.push(`### ${action.listName}`);
-  readme.push(`**Description:** ${action.description} </br>`);
+  readme.push(`**Description:** <br> ${action.description} </br>`);
 
   if (action.isAsync) {
-    readme.push(`**Is Async:** ${action.isAsync} </br>`);
+    readme.push(`**Is Async:** <br> ${action.isAsync} </br>`);
   } 
 
   if(action.params.length > 0){
@@ -181,12 +180,12 @@ readme.push(`---`);
 Object.keys(config.Cnds).forEach((key) => {
   const condition = config.Cnds[key];
   readme.push(`### ${condition.listName}`);
-  readme.push(`**Description:** ${condition.description} </br>`);
+  readme.push(`**Description:** <br> ${condition.description} </br>`);
   if (condition.isTrigger) {
-    readme.push(`**Is Trigger:** ${condition.isTrigger} </br>`);
+    readme.push(`**Is Trigger:** <br> ${condition.isTrigger} </br>`);
   }
   if(condition.islooping) {
-    readme.push(`**Is Looping:** ${condition.islooping} </br>`);
+    readme.push(`**Is Looping:** <br> ${condition.islooping} </br>`);
   }
 
   if(condition.params.length > 0) {
@@ -219,13 +218,13 @@ readme.push(`---`);
 Object.keys(config.Exps).forEach((key) => {
   const expression = config.Exps[key];
   readme.push(`### ${key}`);
-  readme.push(`**Description:** ${expression.description} </br>`);
-  readme.push(`**Return Type:** ${expression.returnType} </br>`);
+  readme.push(`**Description:** <br> ${expression.description} </br>`);
+  readme.push(`**Return Type:** <br> ${expression.returnType} </br>`);
   if(expression.isVariadicParam) {
     readme.push(`**Is Variadic Param:** ${expression.isVariadicParam} </br>`);
   }
   if(expression.params.length > 0) {
-    readme.push(`#### Parameters:`);
+    readme.push(`#### **Parameters**:`);
     // write parameters to indented table, with three columns (name, type, description)
     readme.push(`| Name | Type | Description |`);
     readme.push(`| --- | --- | --- |`);
