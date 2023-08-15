@@ -99,7 +99,7 @@ if(fs.existsSync(exampleFolderPath)) {
 }
 
 
-
+readme.push(``);
 readme.push(`## Properties`);
 readme.push(`| Property Name | Description`);
 readme.push(`| --- | --- |`);
@@ -126,6 +126,7 @@ config.properties.forEach((property) => {
   }
 });
 
+readme.push(``);
 readme.push(`## Actions`);
 readme.push(`| Action | Description |`);
 readme.push(`| --- | --- |`);
@@ -160,7 +161,7 @@ Object.keys(config.Acts).forEach((key) => {
   }
 });
 
-
+readme.push(``);
 readme.push(`## Conditions`);
 readme.push(`| Condition | Description |`);
 readme.push(`| --- | --- |`);
