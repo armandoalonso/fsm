@@ -224,7 +224,7 @@ Object.keys(config.Exps).forEach((key) => {
     readme.push(`**Is Variadic Param:** ${expression.isVariadicParam} </br>`);
   }
   if(expression.params.length > 0) {
-    readme.push(`#### **Parameters**:`);
+    readme.push(`#### Parameters:`);
     // write parameters to indented table, with three columns (name, type, description)
     readme.push(`| Name | Type | Description |`);
     readme.push(`| --- | --- | --- |`);
