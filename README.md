@@ -32,7 +32,7 @@ node ./dev.js
 
 The build uses the pluginConfig file to generate everything else.
 The main files you may want to look at would be instance.js and scriptInterface.js
----
+
 ## Examples Files
 - [piranha305_fsm_examples](./examples/piranha305_fsm_examples.c3p)
 </br>
@@ -47,11 +47,11 @@ The main files you may want to look at would be instance.js and scriptInterface.
 | [Initial State](#initial-state) | The initial state of the FSM |
 ---
 ### Enabled
-**Description:** Enable or disable the FSM </br>
-**Type:** check
+**Description:** <br> Enable or disable the FSM </br>
+**Type:** <br> check
 ### Initial State
-**Description:** The initial state of the FSM </br>
-**Type:** text
+**Description:** <br> The initial state of the FSM </br>
+**Type:** <br> text
 
 ---
 ## Actions
@@ -61,13 +61,13 @@ The main files you may want to look at would be instance.js and scriptInterface.
 | [Enable](#enable) | Enable or disable the FSM |
 ---
 ### Go to state
-**Description:** Go to a state </br>
+**Description:** <br> Go to a state </br>
 #### Parameters:
 | Name | Type | Description |
 | --- | --- | --- |
 | State | string | The state to go to |
 ### Enable
-**Description:** Enable or disable the FSM </br>
+**Description:** <br> Enable or disable the FSM </br>
 #### Parameters:
 | Name | Type | Description |
 | --- | --- | --- |
@@ -86,44 +86,44 @@ The main files you may want to look at would be instance.js and scriptInterface.
 | [Is enabled](#is-enabled) | Check if the FSM is enabled |
 ---
 ### On any state change
-**Description:** Triggered when any state changes </br>
-**Is Trigger:** true </br>
+**Description:** <br> Triggered when any state changes </br>
+**Is Trigger:** <br> true </br>
 ### On state enter
-**Description:** Triggered when a state is entered </br>
-**Is Trigger:** true </br>
+**Description:** <br> Triggered when a state is entered </br>
+**Is Trigger:** <br> true </br>
 #### Parameters:
 | Name | Type | Description |
 | --- | --- | --- |
 | State | string | The state that was just entered |
 ### On state exit
-**Description:** Triggered when a state is exited </br>
-**Is Trigger:** true </br>
+**Description:** <br> Triggered when a state is exited </br>
+**Is Trigger:** <br> true </br>
 #### Parameters:
 | Name | Type | Description |
 | --- | --- | --- |
 | State | string | The state that was just exited |
 ### On state transition
-**Description:** Triggered when a specific state transition occurs </br>
-**Is Trigger:** true </br>
+**Description:** <br> Triggered when a specific state transition occurs </br>
+**Is Trigger:** <br> true </br>
 #### Parameters:
 | Name | Type | Description |
 | --- | --- | --- |
 | From | string | The state that was just exited |
 | To | string | The state that was just entered |
 ### Current state is
-**Description:** Check if the current state is a specific state </br>
+**Description:** <br> Check if the current state is a specific state </br>
 #### Parameters:
 | Name | Type | Description |
 | --- | --- | --- |
 | State | string | The state to check |
 ### Previous state is
-**Description:** Check if the previous state is a specific state </br>
+**Description:** <br> Check if the previous state is a specific state </br>
 #### Parameters:
 | Name | Type | Description |
 | --- | --- | --- |
 | State | string | The state to check |
 ### Is enabled
-**Description:** Check if the FSM is enabled </br>
+**Description:** <br> Check if the FSM is enabled </br>
 
 ---
 ## Expressions
@@ -133,8 +133,8 @@ The main files you may want to look at would be instance.js and scriptInterface.
 | [PreviousState](#previousstate) | The previous state |
 ---
 ### CurrentState
-**Description:** The current state </br>
-**Return Type:** string </br>
+**Description:** <br> The current state </br>
+**Return Type:** <br> string </br>
 ### PreviousState
-**Description:** The previous state </br>
-**Return Type:** string </br>
+**Description:** <br> The previous state </br>
+**Return Type:** <br> string </br>
