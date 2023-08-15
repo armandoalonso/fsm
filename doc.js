@@ -91,9 +91,10 @@ if(fs.existsSync(exampleFolderPath)) {
         if(imageName === fileName) {
           // display the a small version of the image on a new line
           readme.push(`</br>`);
-          readme.push(`<img src="./examples/${image}" width="200" />`);
+          readme.push(`<img src="./examples/${image}" width="200" /></br>`);
         }
       });
+      readme.push(`</br>`);
   });
 }
 
