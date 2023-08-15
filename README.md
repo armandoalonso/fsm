@@ -14,6 +14,7 @@ Download Latest Version : [Version: 1.0.0.0](https://github.com/armandoalonso/fs
 - [Actions](#actions)
 - [Conditions](#conditions)
 - [Expressions](#expressions)
+---
 ## Usage
 To build the addon, run the following commands:
 
@@ -31,12 +32,14 @@ node ./dev.js
 
 The build uses the pluginConfig file to generate everything else.
 The main files you may want to look at would be instance.js and scriptInterface.js
+---
 ## Examples Files
 - [piranha305_fsm_examples](./examples/piranha305_fsm_examples.c3p)
 </br>
-<img src="./examples/piranha305_fsm_examples.gif" width="200" /></br>
+<img src="./examples/piranha305_fsm_examples.gif" width="200" />
 </br>
 
+---
 ## Properties
 | Property Name | Description
 | --- | --- |
@@ -50,6 +53,7 @@ The main files you may want to look at would be instance.js and scriptInterface.
 **Description:** The initial state of the FSM </br>
 **Type:** text
 
+---
 ## Actions
 | Action | Description |
 | --- | --- |
@@ -69,6 +73,7 @@ The main files you may want to look at would be instance.js and scriptInterface.
 | --- | --- | --- |
 | Enabled | boolean | Enable or disable the FSM |
 
+---
 ## Conditions
 | Condition | Description |
 | --- | --- |
@@ -120,6 +125,7 @@ The main files you may want to look at would be instance.js and scriptInterface.
 ### Is enabled
 **Description:** Check if the FSM is enabled </br>
 
+---
 ## Expressions
 | Expression | Description |
 | --- | --- |
