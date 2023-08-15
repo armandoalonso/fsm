@@ -34,7 +34,8 @@ The main files you may want to look at would be instance.js and scriptInterface.
 ## Examples Files
 - [piranha305_fsm_examples](./examples/piranha305_fsm_examples.c3p)
 </br>
-<img src="./examples/piranha305_fsm_examples.gif" width="200" />
+<img src="./examples/piranha305_fsm_examples.gif" width="200" /></br>
+</br>
 ## Properties
 | Property Name | Description
 | --- | --- |
