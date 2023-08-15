@@ -36,6 +36,7 @@ The main files you may want to look at would be instance.js and scriptInterface.
 </br>
 <img src="./examples/piranha305_fsm_examples.gif" width="200" /></br>
 </br>
+
 ## Properties
 | Property Name | Description
 | --- | --- |
@@ -48,6 +49,7 @@ The main files you may want to look at would be instance.js and scriptInterface.
 ### Initial State
 **Description:** The initial state of the FSM </br>
 **Type:** text
+
 ## Actions
 | Action | Description |
 | --- | --- |
@@ -66,6 +68,7 @@ The main files you may want to look at would be instance.js and scriptInterface.
 | Name | Type | Description |
 | --- | --- | --- |
 | Enabled | boolean | Enable or disable the FSM |
+
 ## Conditions
 | Condition | Description |
 | --- | --- |
