@@ -52,7 +52,7 @@ readme.push(`- [Actions](#actions)`);
 readme.push(`- [Conditions](#conditions)`);
 readme.push(`- [Expressions](#expressions)`);
 
-
+readme.push(`---`);
 readme.push(`## Usage`);
 readme.push(`To build the addon, run the following commands:`);
 readme.push(``);
@@ -73,6 +73,7 @@ readme.push(
   `The main files you may want to look at would be instance.js and scriptInterface.js`
 );
 
+readme.push(`---`);
 readme.push(`## Examples Files`);
 const exampleFolderPath = path.join(__dirname, "examples");
 if(fs.existsSync(exampleFolderPath)) {
@@ -91,7 +92,7 @@ if(fs.existsSync(exampleFolderPath)) {
         if(imageName === fileName) {
           // display the a small version of the image on a new line
           readme.push(`</br>`);
-          readme.push(`<img src="./examples/${image}" width="200" /></br>`);
+          readme.push(`<img src="./examples/${image}" width="200" />`);
         }
       });
       readme.push(`</br>`);
@@ -100,6 +101,7 @@ if(fs.existsSync(exampleFolderPath)) {
 
 
 readme.push(``);
+readme.push(`---`);
 readme.push(`## Properties`);
 readme.push(`| Property Name | Description`);
 readme.push(`| --- | --- |`);
@@ -127,6 +129,7 @@ config.properties.forEach((property) => {
 });
 
 readme.push(``);
+readme.push(`---`);
 readme.push(`## Actions`);
 readme.push(`| Action | Description |`);
 readme.push(`| --- | --- |`);
@@ -162,6 +165,7 @@ Object.keys(config.Acts).forEach((key) => {
 });
 
 readme.push(``);
+readme.push(`---`);
 readme.push(`## Conditions`);
 readme.push(`| Condition | Description |`);
 readme.push(`| --- | --- |`);
@@ -199,6 +203,7 @@ Object.keys(config.Cnds).forEach((key) => {
 });
 
 readme.push(``);
+readme.push(`---`);
 readme.push(`## Expressions`);
 readme.push(`| Expression | Description |`);
 readme.push(`| --- | --- |`);
