@@ -1,10 +1,11 @@
-<img src="./src/icon.svg" width="100" /><br>
+<img src="./examples/cover.png" width="150" /><br>
 # FSM <br>
 A Finite State Machine (FSM) Behavior, Used to control the flow of logic for objects <br>
 <br>
 Author: piranha305 <br>
 Website: https://piranha305.itch.io/ <br>
-Download Latest Version : [Version: 1.0.0.0](https://github.com/armandoalonso/fsm/releases/latest) <br>
+Addon Url: https://www.construct.net/en/make-games/addons/1089/fsm <br>
+Download Latest Version : [Version: 1.0.0.1](https://github.com/armandoalonso/fsm/releases/latest) <br>
 <sub>Made using [c3ide2-framework](https://github.com/ConstructFund/c3ide2-framework) </sub><br>
 
 ## Table of Contents
@@ -36,105 +37,42 @@ The main files you may want to look at would be instance.js and scriptInterface.
 ## Examples Files
 - [piranha305_fsm_examples](./examples/piranha305_fsm_examples.c3p)
 </br>
+</br>
 <img src="./examples/piranha305_fsm_examples.gif" width="200" />
 </br>
 
 ---
 ## Properties
-| Property Name | Description
-| --- | --- |
-| [Enabled](#enabled) | Enable or disable the FSM |
-| [Initial State](#initial-state) | The initial state of the FSM |
----
-### Enabled
-**Description:** <br> Enable or disable the FSM </br>
-**Type:** <br> check
-### Initial State
-**Description:** <br> The initial state of the FSM </br>
-**Type:** <br> text
+| Property Name | Description | Type |
+| --- | --- | --- |
+| Enabled | Enable or disable the FSM | check |
+| Initial State | The initial state of the FSM (does not trigger OnStateEnter) | text |
+
 
 ---
 ## Actions
-| Action | Description |
-| --- | --- |
-| [Go to state](#go-to-state) | Go to a state |
-| [Enable](#enable) | Enable or disable the FSM |
----
-### Go to state
-**Description:** <br> Go to a state </br>
-#### Parameters:
-| Name | Type | Description |
+| Action | Description | Params
 | --- | --- | --- |
-| State | string | The state to go to |
-### Enable
-**Description:** <br> Enable or disable the FSM </br>
-#### Parameters:
-| Name | Type | Description |
-| --- | --- | --- |
-| Enabled | boolean | Enable or disable the FSM |
+| Go to state | Transition to a specific state | State             *(string)* <br> |
+| Enable | Enable or disable the FSM | Enabled             *(boolean)* <br> |
+
 
 ---
 ## Conditions
-| Condition | Description |
-| --- | --- |
-| [On any state change](#on-any-state-change) | Triggered when any state changes |
-| [On state enter](#on-state-enter) | Triggered when a state is entered |
-| [On state exit](#on-state-exit) | Triggered when a state is exited |
-| [On state transition](#on-state-transition) | Triggered when a specific state transition occurs |
-| [Current state is](#current-state-is) | Check if the current state is a specific state |
-| [Previous state is](#previous-state-is) | Check if the previous state is a specific state |
-| [Is enabled](#is-enabled) | Check if the FSM is enabled |
----
-### On any state change
-**Description:** <br> Triggered when any state changes </br>
-**Is Trigger:** <br> true </br>
-### On state enter
-**Description:** <br> Triggered when a state is entered </br>
-**Is Trigger:** <br> true </br>
-#### Parameters:
-| Name | Type | Description |
+| Condition | Description | Params
 | --- | --- | --- |
-| State | string | The state that was just entered |
-### On state exit
-**Description:** <br> Triggered when a state is exited </br>
-**Is Trigger:** <br> true </br>
-#### Parameters:
-| Name | Type | Description |
-| --- | --- | --- |
-| State | string | The state that was just exited |
-### On state transition
-**Description:** <br> Triggered when a specific state transition occurs </br>
-**Is Trigger:** <br> true </br>
-#### Parameters:
-| Name | Type | Description |
-| --- | --- | --- |
-| From | string | The state that was just exited |
-| To | string | The state that was just entered |
-### Current state is
-**Description:** <br> Check if the current state is a specific state </br>
-#### Parameters:
-| Name | Type | Description |
-| --- | --- | --- |
-| State | string | The state to check |
-### Previous state is
-**Description:** <br> Check if the previous state is a specific state </br>
-#### Parameters:
-| Name | Type | Description |
-| --- | --- | --- |
-| State | string | The state to check |
-### Is enabled
-**Description:** <br> Check if the FSM is enabled </br>
+| On any state change | Triggered when state changes |  |
+| On state enter | Triggered when a specific state is entered | State *(string)* <br> |
+| On state exit | Triggered when a specific state is exited | State *(string)* <br> |
+| On state transition | Triggered when a specific state transition occurs | From *(string)* <br>To *(string)* <br> |
+| Current state is | Check if the current state is a specific state | State *(string)* <br> |
+| Previous state is | Check if the previous state is a specific state | State *(string)* <br> |
+| Is enabled | Check if the FSM is enabled |  |
+
 
 ---
 ## Expressions
-| Expression | Description |
-| --- | --- |
-| [CurrentState](#currentstate) | The current state |
-| [PreviousState](#previousstate) | The previous state |
----
-### CurrentState
-**Description:** <br> The current state </br>
-**Return Type:** <br> string </br>
-### PreviousState
-**Description:** <br> The previous state </br>
-**Return Type:** <br> string </br>
+| Expression | Description | Return Type | Params
+| --- | --- | --- | --- |
+| CurrentState | The current state | string |  | 
+| PreviousState | The previous state | string |  | 
