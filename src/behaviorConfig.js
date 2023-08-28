@@ -127,7 +127,7 @@ module.exports = {
         },
       ],
       listName: "Go to state",
-      displayText: "{my}: Go to state [i]{0}[/i]",
+      displayText: "{my}: Go to state [b]{0}[/b]",
       description: "Transition to a specific state",
     },
     SetEnabled: {
@@ -145,7 +145,7 @@ module.exports = {
         },
       ],
       listName: "Enable",
-      displayText: "{my}: Enable [i]{0}[/i]",
+      displayText: "{my}: Enable [b]{0}[/b]",
       description: "Enable or disable the FSM",
     }
     /*
@@ -231,9 +231,9 @@ module.exports = {
       listName: "Sample Action",
 
       // The text that appears in the event sheet. Note, every single param must be used in the display text.
-      // You can also use [b] and [i] tags.
+      // You can also use [b] and [b] tags.
       // You can also use the {my} tag to include the behavior icon and name.
-      displayText: "{my}: Sample action [i]{0}[/i]",
+      displayText: "{my}: Sample action [b]{0}[/b]",
 
       // The description of the action as it appears in the add action dialog
       description: "This is a sample action",
@@ -267,7 +267,7 @@ module.exports = {
         },
       ],
       listName: "On state enter",
-      displayText: "{my}: On state enter [i]{0}[/i]",
+      displayText: "{my}: On state enter [b]{0}[/b]",
       description: "Triggered when a specific state is entered",
       isTrigger: true,
     },
@@ -286,7 +286,7 @@ module.exports = {
         },
       ],
       listName: "On state exit",
-      displayText: "{my}: On state exit [i]{0}[/i]",
+      displayText: "{my}: On state exit [b]{0}[/b]",
       description: "Triggered when a specific state is exited",
       isTrigger: true,
     },
@@ -312,7 +312,7 @@ module.exports = {
         }
       ],
       listName: "On state transition",
-      displayText: "{my}: On state transition [i]{0}[/i] -> [i]{1}[/i]",
+      displayText: "{my}: On state transition [b]{0}[/b] -> [b]{1}[/b]",
       description: "Triggered when a specific state transition occurs",
       isTrigger: true,
     },
@@ -331,7 +331,7 @@ module.exports = {
         },
       ],
       listName: "Current state is",
-      displayText: "{my}: Current state is [i]{0}[/i]",
+      displayText: "{my}: Current state is [b]{0}[/b]",
       description: "Check if the current state is a specific state",
     },
     PreviousStateIs: {
@@ -349,7 +349,7 @@ module.exports = {
         },
       ],
       listName: "Previous state is",
-      displayText: "{my}: Previous state is [i]{0}[/i]",
+      displayText: "{my}: Previous state is [b]{0}[/b]",
       description: "Check if the previous state is a specific state",
     },
     IsEnabled: {
@@ -451,9 +451,9 @@ module.exports = {
       listName: "Sample Condition",
 
       // The text that appears in the event sheet. Note, every single param must be used in the display text.
-      // You can also use [b] and [i] tags.
+      // You can also use [b] and [b] tags.
       // You can also use the {my} tag to include the behavior icon and name.
-      displayText: "{my}: Sample condition [i]{0}[/i]",
+      displayText: "{my}: Sample condition [b]{0}[/b]",
 
       // The description of the condition as it appears in the add condition dialog
       description: "This is a sample condition",
