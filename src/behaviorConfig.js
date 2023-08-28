@@ -3,7 +3,7 @@ module.exports = {
   addonType: "behavior",
   id: "piranha305_fsm",
   name: "FSM",
-  version: "1.0.0.0",
+  version: "1.0.0.1",
   category:
     // "attributes",
     // "movements",
@@ -14,7 +14,7 @@ module.exports = {
   documentation: "https://github.com/armandoalonso/fsm/blob/main/README.md",
   description: "A Finite State Machine (FSM) Behavior, Used to control the flow of logic for objects",
   // icon: "icon.svg", // defaults to "icon.svg" if omitted
-  // addonUrl: "https://www.construct.net/en/make-games/addons/####/XXXX", // displayed in auto-generated docs
+  addonUrl: "https://www.construct.net/en/make-games/addons/1089/fsm", // displayed in auto-generated docs
   githubUrl: "https://github.com/armandoalonso/fsm", // displays latest release version in auto-generated docs
   fileDependencies: [
     /*
@@ -54,7 +54,7 @@ module.exports = {
       type: "text",
       id: "initialState",
       name: "Initial State",
-      desc: "The initial state of the FSM",
+      desc: "The initial state of the FSM (does not trigger OnStateEnter)",
       options: {
         initialValue: "",
         interpolatable: false,
@@ -121,14 +121,14 @@ module.exports = {
         {
           id: "state",
           name: "State",
-          desc: "The state to go to",
+          desc: "The state to transition to",
           type: "string",
           value: "",
         },
       ],
       listName: "Go to state",
       displayText: "{my}: Go to state [i]{0}[/i]",
-      description: "Go to a state",
+      description: "Transition to a specific state",
     },
     SetEnabled: {
       category: "general",
@@ -249,7 +249,7 @@ module.exports = {
       params: [],
       listName: "On any state change",
       displayText: "{my}: On any state change",
-      description: "Triggered when any state changes",
+      description: "Triggered when state changes",
       isTrigger: true,
     },
     OnStateEnter: {
@@ -268,7 +268,7 @@ module.exports = {
       ],
       listName: "On state enter",
       displayText: "{my}: On state enter [i]{0}[/i]",
-      description: "Triggered when a state is entered",
+      description: "Triggered when a specific state is entered",
       isTrigger: true,
     },
     OnStateExit: {
@@ -287,7 +287,7 @@ module.exports = {
       ],
       listName: "On state exit",
       displayText: "{my}: On state exit [i]{0}[/i]",
-      description: "Triggered when a state is exited",
+      description: "Triggered when a specific state is exited",
       isTrigger: true,
     },
     OnStateTransition: {
