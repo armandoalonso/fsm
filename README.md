@@ -5,7 +5,7 @@ A Finite State Machine (FSM) Behavior, Used to control the flow of logic for obj
 Author: piranha305 <br>
 Website: https://piranha305.itch.io/ <br>
 Addon Url: https://www.construct.net/en/make-games/addons/1089/fsm <br>
-Download Latest Version : [Version: 1.0.0.1](https://github.com/armandoalonso/fsm/releases/latest) <br>
+Download Latest Version : [Version: 1.0.0.2](https://github.com/armandoalonso/fsm/releases/latest) <br>
 <sub>Made using [c3ide2-framework](https://github.com/ConstructFund/c3ide2-framework) </sub><br>
 
 ## Table of Contents
