@@ -3,6 +3,11 @@ function getInstanceJs(parentClass, scriptInterface, addonTriggers, C3) {
     constructor(inst, properties) {
       super(inst);
 
+      this.previousState = "";
+      this.currentState = "";
+      this.initialState = "";
+      this.enabled = false;
+
       if (properties) {
         this.enabled = properties[0];
         this.initialState = properties[1];
@@ -12,7 +17,17 @@ function getInstanceJs(parentClass, scriptInterface, addonTriggers, C3) {
       if(this.initialState == ""){
         this.initialState = "default";
       }
-      this.previousState = this.currentState;
+
+      this._TriggerInitialOnStateEnter();
+    }
+
+    _TriggerInitialOnStateEnter() {
+      setTimeout(() => {
+        this.previousState = "";
+        this.currentState = this.initialState;
+        this.Trigger(C3.Behaviors.piranha305_fsm.Cnds.OnStateChange);
+        this.Trigger(C3.Behaviors.piranha305_fsm.Cnds.OnStateEnter);
+      }, 0.0001);
     }
 
     _GoToState(state) {
