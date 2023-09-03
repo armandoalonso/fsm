@@ -5,7 +5,7 @@ A Finite State Machine (FSM) Behavior, Used to control the flow of logic for obj
 Author: piranha305 <br>
 Website: https://piranha305.itch.io/ <br>
 Addon Url: https://www.construct.net/en/make-games/addons/1089/fsm <br>
-Download Latest Version : [Version: 1.0.0.2](https://github.com/armandoalonso/fsm/releases/latest) <br>
+Download Latest Version : [Version: 1.0.0.3](https://github.com/armandoalonso/fsm/releases/latest) <br>
 <sub>Made using [c3ide2-framework](https://github.com/ConstructFund/c3ide2-framework) </sub><br>
 
 ## Table of Contents
@@ -68,6 +68,10 @@ The main files you may want to look at would be instance.js and scriptInterface.
 | Current state is | Check if the current state is a specific state | State *(string)* <br> |
 | Previous state is | Check if the previous state is a specific state | State *(string)* <br> |
 | Is enabled | Check if the FSM is enabled |  |
+| Current state in list | Check if the current state is in a list of states, (comma separated list of states) | States *(string)* <br> |
+| Previous state in list | Check if the previous state is in a list of states, (comma separated list of states) | States *(string)* <br> |
+| On state enter in list | Triggered when a specific state is entered from a comma separated list of states | States *(string)* <br> |
+| On state exit in list | Triggered when a specific state is exited from a comma separated list of states | States *(string)* <br> |
 
 
 ---
