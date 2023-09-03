@@ -3,7 +3,7 @@ module.exports = {
   addonType: "behavior",
   id: "piranha305_fsm",
   name: "FSM",
-  version: "1.0.0.2",
+  version: "1.0.0.3",
   category:
     // "attributes",
     // "movements",
@@ -361,8 +361,82 @@ module.exports = {
       listName: "Is enabled",
       displayText: "{my}: Is enabled",
       description: "Check if the FSM is enabled",
-    }
-
+    },
+    CurrentStateInList: {
+      category: "general",
+      forward: "_CurrentStateIn",
+      autoScriptInterface: true,
+      highlight: false,
+      params: [
+        {
+          id: "states",
+          name: "States",
+          desc: "The states to check (comma separated list of states)",
+          type: "string",
+          value: "",
+        },
+      ],
+      listName: "Current state in list",
+      displayText: "{my}: Current state in [b]{0}[/b]",
+      description: "Check if the current state is in a list of states, (comma separated list of states)",
+    },
+    PreviousStateInList: {
+      category: "general",
+      forward: "_PreviousStateIn",
+      autoScriptInterface: true,
+      highlight: false,
+      params: [
+        {
+          id: "states",
+          name: "States",
+          desc: "The states to check (comma separated list of states)",
+          type: "string",
+          value: "",
+        },
+      ],
+      listName: "Previous state in list",
+      displayText: "{my}: Previous state in [b]{0}[/b]",
+      description: "Check if the previous state is in a list of states, (comma separated list of states)",
+    },
+    OnStateEnterInList: {
+      category: "general",
+      forward: "_OnStateEnterIn",
+      autoScriptInterface: true,
+      highlight: false,
+      
+      params: [
+        {
+          id: "states",
+          name: "States",
+          desc: "The states to check (comma separated list of states)",
+          type: "string",
+          value: "",
+        },
+      ],
+      listName: "On state enter in list",
+      displayText: "{my}: On state enter in [b]{0}[/b]",
+      description: "Triggered when a specific state is entered from a comma separated list of states",
+      isTrigger: true,
+    },
+    OnStateExitInList: {
+      category: "general",
+      forward: "_OnStateExitIn",
+      autoScriptInterface: true,
+      highlight: false,
+      params: [
+        {
+          id: "states",
+          name: "States",
+          desc: "The states to check (comma separated list of states)",
+          type: "string",
+          value: "",
+        },
+      ],
+      listName: "On state exit in list",
+      displayText: "{my}: On state exit in [b]{0}[/b]",
+      description: "Triggered when a specific state is exited from a comma separated list of states",
+      isTrigger: true,
+    },
     /*
     SampleCondition: {
       // The category of the action as it appears in the add condition dialog

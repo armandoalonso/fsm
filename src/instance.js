@@ -27,6 +27,7 @@ function getInstanceJs(parentClass, scriptInterface, addonTriggers, C3) {
         this.currentState = this.initialState;
         this.Trigger(C3.Behaviors.piranha305_fsm.Cnds.OnStateChange);
         this.Trigger(C3.Behaviors.piranha305_fsm.Cnds.OnStateEnter);
+        this.Trigger(C3.Behaviors.piranha305_fsm.Cnds.OnStateEnterInList);
       }, 0.0001);
     }
 
@@ -36,7 +37,9 @@ function getInstanceJs(parentClass, scriptInterface, addonTriggers, C3) {
         this.currentState = state;
         this.Trigger(C3.Behaviors.piranha305_fsm.Cnds.OnStateChange);
         this.Trigger(C3.Behaviors.piranha305_fsm.Cnds.OnStateExit);
+        this.Trigger(C3.Behaviors.piranha305_fsm.Cnds.OnStateExitInList);
         this.Trigger(C3.Behaviors.piranha305_fsm.Cnds.OnStateEnter);
+        this.Trigger(C3.Behaviors.piranha305_fsm.Cnds.OnStateEnterInList);
         this.Trigger(C3.Behaviors.piranha305_fsm.Cnds.OnStateTransition);
       }
     }
@@ -63,6 +66,26 @@ function getInstanceJs(parentClass, scriptInterface, addonTriggers, C3) {
 
     _PreviousStateIs(state) {
       return this.enabled && this.previousState == state;
+    }
+
+    _CurrentStateIn(states) {
+      states = states.split(",").map((x) => x.trim());
+      return this.enabled && states.includes(this.currentState);
+    }
+
+    _PreviousStateIn(states) {
+      states = states.split(",").map((x) => x.trim());
+      return this.enabled && states.includes(this.previousState);
+    }
+
+    _OnStateEnterIn(states) {
+      states = states.split(",").map((x) => x.trim());
+      return this.enabled && states.includes(this.currentState);
+    }
+
+    _OnStateExitIn(states) {
+      states = states.split(",").map((x) => x.trim());
+      return this.enabled && states.includes(this.previousState);
     }
 
     _IsEnabled() {
