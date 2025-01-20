@@ -1,0 +1,183 @@
+{
+  "languageTag": "en-US",
+  "fileDescription": "Strings for piranha305_fsm.",
+  "text": {
+    "behaviors": {
+      "piranha305_fsm": {
+        "name": "FSM",
+        "description": "A Finite State Machine (FSM) Behavior, Used to control the flow of logic for objects",
+        "help-url": "https://www.construct.net",
+        "aceCategories": {
+          "General": "General"
+        },
+        "properties": {
+          "enabled": {
+            "name": "Enabled",
+            "desc": "Enable or disable the FSM"
+          },
+          "initialState": {
+            "name": "Initial State",
+            "desc": "The initial state of the FSM"
+          },
+          "triggerInitialState": {
+            "name": "Trigger Initial State",
+            "desc": "Trigger the initial OnStateEnter event"
+          }
+        },
+        "actions": {
+          "GoToState": {
+            "list-name": "Go to state",
+            "display-text": "{my}: Go to state [b]{0}[/b]",
+            "description": "Transition to a specific state",
+            "params": {
+              "state": {
+                "name": "State",
+                "desc": "The state to transition to"
+              }
+            }
+          },
+          "SetEnabled": {
+            "list-name": "Set enabled",
+            "display-text": "{my}: Set enabled to [b]{0}[/b]",
+            "description": "Enable or disable the FSM",
+            "params": {
+              "enabled": {
+                "name": "Enabled",
+                "desc": "Enable or disable the FSM"
+              }
+            }
+          }
+        },
+        "conditions": {
+          "CurrentStateInList": {
+            "list-name": "Current state in list",
+            "display-text": "{my}: Current state in list: {0}",
+            "description": "Check if the current state is in a list of states",
+            "params": {
+              "states": {
+                "name": "States",
+                "desc": "The states to check (comma separated)"
+              }
+            }
+          },
+          "CurrentStateIs": {
+            "list-name": "Current state is",
+            "display-text": "{my}: Current state is [b]{0}[/b]",
+            "description": "Check if the current state is a specific state",
+            "params": {
+              "state": {
+                "name": "State",
+                "desc": "The state to check"
+              }
+            }
+          },
+          "IsEnabled": {
+            "list-name": "Is enabled",
+            "display-text": "{my}: Is enabled",
+            "description": "Check if the FSM is enabled",
+            "params": {}
+          },
+          "OnStateChange": {
+            "list-name": "On any state change",
+            "display-text": "{my}: On any state change",
+            "description": "Triggered when state changes",
+            "params": {}
+          },
+          "OnStateEnter": {
+            "list-name": "On state enter",
+            "display-text": "{my}: On state enter [b]{0}[/b]",
+            "description": "Triggered when entering a specific state",
+            "params": {
+              "state": {
+                "name": "State",
+                "desc": "The state to trigger on"
+              }
+            }
+          },
+          "OnStateEnterInList": {
+            "list-name": "On state enter in list",
+            "display-text": "{my}: On state enter in list: {0}",
+            "description": "Triggered when entering a state in a list of states",
+            "params": {
+              "states": {
+                "name": "States",
+                "desc": "The states to trigger on (comma separated)"
+              }
+            }
+          },
+          "OnStateExit": {
+            "list-name": "On state exit",
+            "display-text": "{my}: On state exit [b]{0}[/b]",
+            "description": "Triggered when exiting a specific state",
+            "params": {
+              "state": {
+                "name": "State",
+                "desc": "The state to trigger on"
+              }
+            }
+          },
+          "OnStateExitInList": {
+            "list-name": "On state exit in list",
+            "display-text": "{my}: On state exit in list: {0}",
+            "description": "Triggered when exiting a state in a list of states",
+            "params": {
+              "states": {
+                "name": "States",
+                "desc": "The states to trigger on (comma separated)"
+              }
+            }
+          },
+          "OnStateTransition": {
+            "list-name": "On state transition",
+            "display-text": "{my}: On state transition from [b]{0}[/b] to [b]{1}[/b]",
+            "description": "Triggered when transitioning from one state to another",
+            "params": {
+              "from": {
+                "name": "From",
+                "desc": "The state to transition from"
+              },
+              "to": {
+                "name": "To",
+                "desc": "The state to transition to"
+              }
+            }
+          },
+          "PreviousStateInList": {
+            "list-name": "Previous state in list",
+            "display-text": "{my}: Previous state in list: {0}",
+            "description": "Check if the previous state is in a list of states",
+            "params": {
+              "states": {
+                "name": "States",
+                "desc": "The states to check (comma separated)"
+              }
+            }
+          },
+          "PreviousStateIs": {
+            "list-name": "Previous state is",
+            "display-text": "{my}: Previous state is [b]{0}[/b]",
+            "description": "Check if the previous state was a specific state",
+            "params": {
+              "state": {
+                "name": "State",
+                "desc": "The state to check"
+              }
+            }
+          }
+        },
+        "expressions": {
+          "CurrentState": {
+            "translated-name": "CurrentState",
+            "description": "Get the current state",
+            "params": {}
+          },
+          "PreviousState": {
+            "translated-name": "PreviousState",
+            "description": "Get the previous state",
+            "params": {}
+          }
+        }
+      }
+    }
+  }
+}

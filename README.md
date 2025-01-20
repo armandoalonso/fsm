@@ -1,12 +1,15 @@
 <img src="./examples/cover.png" width="150" /><br>
-# FSM <br>
-A Finite State Machine (FSM) Behavior, Used to control the flow of logic for objects <br>
+# FSM
+<i>A Finite State Machine (FSM) Behavior, Used to control the flow of logic for objects</i> <br>
+### Version 4.0.0.0
+
+[<img src="https://placehold.co/200x50/4493f8/FFF?text=Download&font=montserrat" width="200"/>](https://github.com/armandoalonso/fsm/releases/download/piranha305_fsm-4.0.0.0.c3addon/piranha305_fsm-4.0.0.0.c3addon)
 <br>
-Author: piranha305 <br>
-Website: https://piranha305.itch.io/ <br>
-Addon Url: https://www.construct.net/en/make-games/addons/1089/fsm <br>
-Download Latest Version : [Version: 1.0.0.3](https://github.com/armandoalonso/fsm/releases/latest) <br>
-<sub>Made using [c3ide2-framework](https://github.com/ConstructFund/c3ide2-framework) </sub><br>
+<sub> [See all releases](https://github.com/armandoalonso/fsm/releases) </sub> <br>
+
+---
+<b><u>Author:</u></b> piranha305 <br>
+<sub>Made using [CAW](https://marketplace.visualstudio.com/items?itemName=skymen.caw) </sub><br>
 
 ## Table of Contents
 - [Usage](#usage)
@@ -21,32 +24,28 @@ To build the addon, run the following commands:
 
 ```
 npm i
-node ./build.js
+npm run build
 ```
 
 To run the dev server, run
 
 ```
 npm i
-node ./dev.js
+npm run dev
 ```
 
-The build uses the pluginConfig file to generate everything else.
-The main files you may want to look at would be instance.js and scriptInterface.js
-
 ## Examples Files
-- [piranha305_fsm_examples](./examples/piranha305_fsm_examples.c3p)
-</br>
-</br>
-<img src="./examples/piranha305_fsm_examples.gif" width="200" />
-</br>
+| Images | Description | Download |
+| --- | --- | --- |
+| <img src="./examples/fsm_examples.gif" width="100" /> | fsm_examples | [<img src="https://placehold.co/120x30/4493f8/FFF?text=Download&font=montserrat" width="120"/>](https://github.com/armandoalonso/fsm/raw/refs/heads/main/examples/fsm_examples.c3p) |
 
 ---
 ## Properties
 | Property Name | Description | Type |
 | --- | --- | --- |
 | Enabled | Enable or disable the FSM | check |
-| Initial State | The initial state of the FSM (does not trigger OnStateEnter) | text |
+| Initial State | The initial state of the FSM | text |
+| Trigger Initial State | Trigger the initial OnStateEnter event | check |
 
 
 ---
@@ -54,29 +53,29 @@ The main files you may want to look at would be instance.js and scriptInterface.
 | Action | Description | Params
 | --- | --- | --- |
 | Go to state | Transition to a specific state | State             *(string)* <br> |
-| Enable | Enable or disable the FSM | Enabled             *(boolean)* <br> |
+| Set enabled | Enable or disable the FSM | Enabled             *(boolean)* <br> |
 
 
 ---
 ## Conditions
 | Condition | Description | Params
 | --- | --- | --- |
-| On any state change | Triggered when state changes |  |
-| On state enter | Triggered when a specific state is entered | State *(string)* <br> |
-| On state exit | Triggered when a specific state is exited | State *(string)* <br> |
-| On state transition | Triggered when a specific state transition occurs | From *(string)* <br>To *(string)* <br> |
+| Current state in list | Check if the current state is in a list of states | States *(string)* <br> |
 | Current state is | Check if the current state is a specific state | State *(string)* <br> |
-| Previous state is | Check if the previous state is a specific state | State *(string)* <br> |
 | Is enabled | Check if the FSM is enabled |  |
-| Current state in list | Check if the current state is in a list of states, (comma separated list of states) | States *(string)* <br> |
-| Previous state in list | Check if the previous state is in a list of states, (comma separated list of states) | States *(string)* <br> |
-| On state enter in list | Triggered when a specific state is entered from a comma separated list of states | States *(string)* <br> |
-| On state exit in list | Triggered when a specific state is exited from a comma separated list of states | States *(string)* <br> |
+| On any state change | Triggered when state changes |  |
+| On state enter | Triggered when entering a specific state | State *(string)* <br> |
+| On state enter in list | Triggered when entering a state in a list of states | States *(string)* <br> |
+| On state exit | Triggered when exiting a specific state | State *(string)* <br> |
+| On state exit in list | Triggered when exiting a state in a list of states | States *(string)* <br> |
+| On state transition | Triggered when transitioning from one state to another | From *(string)* <br>To *(string)* <br> |
+| Previous state in list | Check if the previous state is in a list of states | States *(string)* <br> |
+| Previous state is | Check if the previous state was a specific state | State *(string)* <br> |
 
 
 ---
 ## Expressions
 | Expression | Description | Return Type | Params
 | --- | --- | --- | --- |
-| CurrentState | The current state | string |  | 
-| PreviousState | The previous state | string |  | 
+| CurrentState | Get the current state | string |  | 
+| PreviousState | Get the previous state | string |  | 

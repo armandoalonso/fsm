@@ -1,0 +1,16 @@
+{
+  "javascript.updateImportsOnFileMove.enabled": "never",
+  "files.exclude": {
+    "build": false,
+    "generated": false,
+    "template": false,
+    "node_modules": true,
+    "dist/export": false,
+    "dist/exportStep": true,
+    "package-lock.json": true,
+    "package.json": true,
+    ".vscode": false,
+    ".github": true
+  },
+  "workspaceKeybindings.cawKeybinds.enabled": true
+}
