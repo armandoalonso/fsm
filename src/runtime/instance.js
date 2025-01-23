@@ -52,7 +52,6 @@ export default function (parentClass) {
     }
 
     _trigger(method) {
-      debugger;
       super._trigger(self.C3.Behaviors[id].Cnds[method]);
     }
 
