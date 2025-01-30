@@ -24,11 +24,11 @@ export default function (parentClass) {
       }
 
       if (this.triggerOnStart) {
-        this.triggerInitialOnStateEnter();
+        this.#triggerInitialOnStateEnter();
       }
     }
 
-    triggerInitialOnStateEnter() {
+    #triggerInitialOnStateEnter() {
       setTimeout(() => {
         this.previousState = "";
         this.currentState = this.initialState;

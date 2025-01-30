@@ -1,9 +1,9 @@
 <img src="./examples/cover.png" width="150" /><br>
 # FSM
 <i>A Finite State Machine (FSM) Behavior, Used to control the flow of logic for objects</i> <br>
-### Version 4.0.0.1
+### Version 4.0.0.2
 
-[<img src="https://placehold.co/200x50/4493f8/FFF?text=Download&font=montserrat" width="200"/>](https://github.com/armandoalonso/fsm/releases/download/piranha305_fsm-4.0.0.1.c3addon/piranha305_fsm-4.0.0.1.c3addon)
+[<img src="https://placehold.co/200x50/4493f8/FFF?text=Download&font=montserrat" width="200"/>](https://github.com/armandoalonso/fsm/releases/download/piranha305_fsm-4.0.0.2.c3addon/piranha305_fsm-4.0.0.2.c3addon)
 <br>
 <sub> [See all releases](https://github.com/armandoalonso/fsm/releases) </sub> <br>
 
