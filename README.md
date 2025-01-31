@@ -1,4 +1,4 @@
-<img src="./examples/cover.gif" width="150" /><br>
+<img src="./examples/cover.png" width="150" /><br>
 # FSM
 <i>A Finite State Machine (FSM) Behavior, Used to control the flow of logic for objects</i> <br>
 ### Version 4.0.0.2
